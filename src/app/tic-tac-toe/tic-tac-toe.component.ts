@@ -5,11 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './tic-tac-toe.component.html',
   styleUrls: ['./tic-tac-toe.component.css']
 })
-export class TicTacToeComponent implements OnInit {
+export class TicTacToeComponent  {
 
-  constructor() { }
+  currentPlayer: string = "X";
+  winner: string ='';
+  board: string[][]=[
+    ['','',''],
+    ['','',''],
+    ['','',''],
+  ]
 
-  ngOnInit(): void {
-  }
+  constructor(){}
 
 }
